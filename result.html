@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fde2e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-box {
+            background: white;
+            width: 520px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #9d174d;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h3 {
+            color: #be185d;
+        }
+        a {
+            display: block;
+            margin-top: 25px;
+            text-align: center;
+            background: #be185d;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #9d174d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-box">
+    <h2>🧠 Resume Analysis Result</h2>
+
+    <div class="section">
+        <h3>Predicted Personality Insight</h3>
+        <p>{{ personality }}</p>
+    </div>
+
+    <div class="section">
+        <h3>Resume Improvement Tips</h3>
+        <p>{{ improvement }}</p>
+    </div>
+
+    <a href="/">Analyze Another Resume</a>
+</div>
+
+</body>
+</html>
+
+
+
+

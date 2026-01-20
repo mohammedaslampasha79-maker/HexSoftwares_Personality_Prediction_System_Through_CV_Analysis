@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Personality Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dbeafe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            width: 420px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>📄 CV Personality Prediction System</h2>
+    <p>Upload your resume (PDF only)</p>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <br>
+        <button type="submit">Analyze Resume</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+
